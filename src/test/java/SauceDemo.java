@@ -21,8 +21,8 @@ public class SauceDemo {
         WebElement buttonLogin = chromeDriver.findElement(By.cssSelector("input[id*='login-button']"));
         buttonLogin.click();
         WebElement labelProducts = chromeDriver.findElement(By.cssSelector("span[class*='title']"));
-        String productLabel = labelProducts.getText();
-        assertEquals("PRODUCTS", productLabel);
+        String productLabelText = labelProducts.getText();
+        assertEquals("PRODUCTS", productLabelText);
 
 
         Thread.sleep(3000);
